@@ -1,0 +1,10 @@
+mission_manager:
+  ros__parameters:
+    target_medicine: "med_1"
+    cruise_height: 0.5           # m
+    hover_duration: 20.0         # s
+    delivery_wait: 20.0          # s
+    detection_confidence: 0.6
+    min_battery_voltage: 3.4     # V
+    heartbeat_timeout: 2.0       # s
+    monitored_nodes: ["crazyflie_server", "yolo_detector", "camera_bridge"]

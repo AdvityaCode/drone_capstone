@@ -1,0 +1,5 @@
+# Called by operator GUI on /mission/request_state
+uint8 requested_state
+---
+bool accepted
+string message

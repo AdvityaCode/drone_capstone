@@ -1,0 +1,7 @@
+# Poses in the `map` frame. Fill in after the mapping run.
+origin:   {x: 0.0, y: 0.0, z: 0.0, yaw: 0.0}
+tables:
+  - {id: 1, medicine: "med_1", x: 0.0, y: 0.0, z: 0.5, yaw: 0.0}
+  - {id: 2, medicine: "med_2", x: 0.0, y: 0.0, z: 0.5, yaw: 0.0}
+  - {id: 3, medicine: "med_3", x: 0.0, y: 0.0, z: 0.5, yaw: 0.0}
+delivery: {x: 0.0, y: 0.0, z: 0.5, yaw: 0.0}

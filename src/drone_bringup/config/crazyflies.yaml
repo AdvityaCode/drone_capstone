@@ -1,0 +1,34 @@
+# Crazyswarm2 robot config (see crazyswarm2 docs for full schema)
+fileversion: 3
+
+robots:
+  cf1:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E7E7    # TODO: set your radio URI
+    initial_position: [0.0, 0.0, 0.0]
+    type: cf21_flowdeck_multiranger
+
+robot_types:
+  cf21_flowdeck_multiranger:
+    motion_capture:
+      enabled: false
+    big_quad: false
+    battery:
+      voltage_warning: 3.8
+      voltage_critical: 3.7
+
+all:
+  firmware_logging:
+    enabled: true
+    default_topics:
+      pose: {frequency: 10}
+      odom: {frequency: 10}
+      scan: {frequency: 10}
+      status: {frequency: 1}
+  firmware_params:
+    stabilizer:
+      estimator: 2      # Kalman (needed for Flow deck)
+      controller: 1     # PID
+  broadcasts:
+    num_repeats: 15
+    delay_between_repeats_ms: 1

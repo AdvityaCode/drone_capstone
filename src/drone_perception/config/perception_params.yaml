@@ -1,0 +1,11 @@
+camera_bridge:
+  ros__parameters:
+    stream_url: "http://192.168.4.1:81/stream"   # TODO: ESP32 IP
+    publish_rate: 5.0                             # Hz (2-5 fps)
+    frame_id: "camera_link"
+
+yolo_detector:
+  ros__parameters:
+    model_path: "models/medicine.pt"
+    confidence_threshold: 0.6
+    device: "cpu"

@@ -1,0 +1,10 @@
+# Third-party source dependencies. Import with:  vcs import src < drone.repos
+repositories:
+  crazyswarm2:
+    type: git
+    url: https://github.com/IMRCLab/crazyswarm2.git
+    version: main
+  motion_capture_tracking:
+    type: git
+    url: https://github.com/IMRCLab/motion_capture_tracking.git
+    version: ros2

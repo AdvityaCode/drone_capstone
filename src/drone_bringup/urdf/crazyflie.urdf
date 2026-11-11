@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Static frames for the drone: cf1 (base) -> camera_link. TODO: measure offsets. -->
+<robot name="crazyflie">
+  <link name="cf1"/>
+  <link name="camera_link"/>
+  <joint name="cf1_to_camera" type="fixed">
+    <parent link="cf1"/>
+    <child link="camera_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+</robot>

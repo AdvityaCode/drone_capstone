@@ -1,0 +1,8 @@
+build/
+install/
+log/
+__pycache__/
+*.pyc
+*.pt
+src/crazyswarm2/
+src/motion_capture_tracking/
